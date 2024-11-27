@@ -9,10 +9,10 @@ function App() {
   const welcomeMessageStyle = {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    marginTop: "10px",
     height: "90vh",
     textAlign: "center",
-    fontSize: "4rem", 
+    fontSize: "2rem", 
     fontWeight: "bold", 
     letterSpacing: "1px",  
     textTransform: "uppercase" 
@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route index path="/" element={<div className="bg-custom text-white border-white" style={welcomeMessageStyle}>Welcome to the Home Page!</div>} />
+        <Route index path="/" element={<div className=" text-black border-white" style={welcomeMessageStyle}>Welcome to Admin Dashbord!!!</div>} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/roles" element={<RolesPage />} />
       </Routes>

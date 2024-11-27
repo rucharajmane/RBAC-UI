@@ -84,11 +84,11 @@ const RolesPage = () => {
   };
 
   return (
-    <div className="p-6 space-y-8 bg-custom">
-      <h2 className="text-3xl font-semibold text-center text-white">Manage Roles</h2>
+    <div className="p-6 space-y-8">
+      <h2 className="text-3xl font-semibold text-center text-black">Manage Roles</h2>
 
       {/* Role Form */}
-      <div className="bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+      <div className="bg-gradient-to-r from-blue-400 to-indigo-600 shadow-xl rounded-lg px-8 pt-6 pb-8 mb-8 w-full max-w-3xl mx-auto transition-transform transform hover:scale-105 hover:shadow-2xl">
         <RoleForm
           onSubmit={handleSave}
           initialData={currentRole}
@@ -98,10 +98,10 @@ const RolesPage = () => {
       </div>
 
       {/* Display Users */}
-      <div className="my-6">
-        <h3 className="text-2xl font-semibold text-white">Users</h3>
+      <div className="my-6 max-w-3xl mx-auto">
+        <h3 className="text-2xl font-semibold text-black">Users</h3>
         <div className="mb-4">
-          <label className="block text-lg font-medium text-white">Select User:</label>
+          <label className="block text-lg font-medium text-black">Select User:</label>
           <select
             className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
             value={selectedUser?.id || ""}
@@ -122,8 +122,8 @@ const RolesPage = () => {
       </div>
 
       {/* Current Roles */}
-      <div className="my-6 overflow-hidden">
-        <h3 className="text-2xl font-semibold text-white">Current Roles</h3>
+      <div className="my-6 overflow-hidden max-w-4xl mx-auto">
+        <h3 className="text-2xl font-semibold text-black p-4">Current Roles</h3>
         <div className="overflow-x-auto bg-white p-4 rounded-lg shadow-md mt-4">
           <table className="min-w-full table-auto border-collapse border border-gray-300">
             <thead className="bg-gray-200 text-gray-800">

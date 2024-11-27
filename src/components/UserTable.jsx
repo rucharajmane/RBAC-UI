@@ -33,7 +33,7 @@ const UserTable = ({ users, onEdit, onDelete }) => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden max-w-4xl mx-auto">
       <table className="min-w-full table-auto border-collapse border border-gray-300">
         <thead className="bg-gray-200 text-gray-800">
           <tr>
@@ -102,7 +102,6 @@ const UserTable = ({ users, onEdit, onDelete }) => {
                     >
                       Edit
                     </button>
-                    {/* Disable delete button for users with role "delete" */}
                     <button
                       onClick={() =>
                         user.role !== "delete"
