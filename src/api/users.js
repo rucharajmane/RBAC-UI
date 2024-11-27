@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:3000/users"; // Alternative to localhost
+const API_URL = "http://localhost:3001/users";
 
 export const fetchUsers = () => axios.get(API_URL);
 export const addUser = (user) => axios.post(API_URL, user);
