@@ -4,24 +4,21 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5173,
-    open: true, // Automatically opens the app in the browser
+    port: 5173,           // Set the server port for development
+    open: true,           // Automatically open the app in the browser when the server starts
+    fs: {
+      strict: false,      // Disable strict file system checks
+    },
   },
   build: {
-    outDir: 'dist',
+    outDir: 'dist',      // Specify the output directory for the production build
   },
   resolve: {
     alias: {
-      '@': '/src',
-    },
-  },
-  // Enable SPA fallback
-  server: {
-    fs: {
-      strict: false,
+      '@': '/src',        // Set up path alias for the 'src' folder
     },
   },
   preview: {
-    port: 5174,
+    port: 5174,          // Set the port for previewing the production build
   },
 });
