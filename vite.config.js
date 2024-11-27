@@ -9,6 +9,7 @@ export default defineConfig({
     fs: {
       strict: false,      // Disable strict file system checks
     },
+    host: '0.0.0.0',      // Make the app accessible publicly by binding to 0.0.0.0
   },
   build: {
     outDir: 'dist',      // Specify the output directory for the production build
