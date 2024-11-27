@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "6278",
+      "name": "Prem Radheshyam Mahajan",
+      "role": "Admin"
+    },
+    {
+      "id": "65aa",
+      "name": "Ramesh Suresh Kulkarni ",
+      "role": "Sub-Admin"
+    },
+    {
+      "id": "f06c",
+      "name": "Middle",
+      "role": "Gamer"
+    },
+    {
+      "id": "0453",
+      "name": "Adddd",
+      "role": "aa"
+    }
+  ],
+  "roles": [
+    {
+      "id": "d2f1",
+      "name": "Ramesh Suresh Kulkarni ",
+      "permissions": [
+        "Write"
+      ],
+      "userId": "65aa"
+    },
+    {
+      "name": "Middle",
+      "permissions": [
+        "Read"
+      ],
+      "id": "16b8"
+    },
+    {
+      "name": "Prem Radheshyam Mahajan",
+      "permissions": [
+        "Delete"
+      ],
+      "id": "6fc6"
+    },
+    {
+      "name": "Adddd",
+      "permissions": [
+        "Read",
+        "Write"
+      ],
+      "id": "5eca"
+    }
+  ]
+}
